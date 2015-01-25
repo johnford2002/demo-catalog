@@ -3,7 +3,6 @@
  * @author John Ford <john.ford2002@gmail.com
  * @since 2015-01-25
  */
-var Promise = require('es6-promise').Promise;
 var Catalog = require('./Catalog/Catalog.js');
 
 var c = new Catalog();

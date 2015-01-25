@@ -31,7 +31,7 @@
 			this.metricsIdIndex = {};
 			this.metricsCategoryIdIndex = {};
 			this.metricsFieldNameIndex = {};
-		}
+		};
 
 		/**
 		 * @desc Loads data from the CatalogAPI and sets up indexes for searching the catalog
@@ -92,7 +92,7 @@
 			if(id in this.categoriesIdIndex){
 				// Populate category model and return
 				var category = new Category();
-				category.populateFromArray(this.categories[this.categoriesIdIndex[id]])
+				category.populateFromArray(this.categories[this.categoriesIdIndex[id]]);
 				return category;
 			}
 
@@ -138,7 +138,7 @@
 			} else {
 				// Populate category model and return
 				var category = new Category();
-				category.populateFromArray(this.categories[intersection[0]])
+				category.populateFromArray(this.categories[intersection[0]]);
 				return category;
 			}
 		};
@@ -201,7 +201,7 @@
 			} else {
 				// Populate Metric object and return
 				var metric = new Metric();
-				metric.populateFromArray(this.metrics[intersection[0]])
+				metric.populateFromArray(this.metrics[intersection[0]]);
 				return metric;
 			}
 		};
@@ -292,7 +292,7 @@
 		 */
 		Catalog.prototype._arrayIntersect = function(a, b){
 			var ai=0, bi=0;
-			var result = new Array();
+			var result = [];
 
 			while( ai < a.length && bi < b.length )
 			{

@@ -22,7 +22,7 @@
 			this.object_type = arr[1];
 			this.stat_name = arr[2];
 			this.display_name = arr[3];
-		}
+		};
 
 		return Category;
 	})();

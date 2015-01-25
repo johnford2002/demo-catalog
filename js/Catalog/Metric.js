@@ -22,7 +22,7 @@
 			this.category_id = arr[1];
 			this.field_name = arr[2];
 			this.display_name = arr[3];
-		}
+		};
 
 		return Metric;
 	})();
