@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/export.js"></script>
+		<script type="text/javascript">
+			var c = new Demo.Catalog();
+
+			c.initialize().th
+			   function() {
+			       var category1, category2, metric1, metric2;
+
+			       // Test category lookups
+			       category1 = c.getCategoryById(1);
+			       category2 = c.getCategoryByStatString('demo.device.http');
+
+			       if (category1.id === category2.id) {
+			           console.log(category1.display_name + ' lookups match!');
+			       }
+
+			       // Test metric lookups
+			       metric1 = c.getMetricById(4);
+			       metric2 = c.getMetricByStatString('demo.device.dns:req');
+
+			       if (metric1.id === metric2.id) {
+			           console.log(metric1.display_name + ' lookups match!');
+			       }
+			   }
+			);
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
