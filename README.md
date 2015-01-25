@@ -6,4 +6,6 @@ This module provides a way to access categories and metrics via an ID or formatt
 
 An example server side use can be found in js/testCatalog.js.
 
+	node js/testCatalog.js
+
 An example client side use utilizing an export from browserify can be found in testPage.html.
