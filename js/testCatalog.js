@@ -6,12 +6,10 @@
 var Promise = require('es6-promise').Promise;
 var Catalog = require('./Catalog/Catalog.js');
 
-//console.log('Instantiating catalog...')
 var c = new Catalog();
 
 c.initialize().then(
 	function() {
-		//console.log('Catalog loaded.');
 
 		var category1, category2, metric1, metric2;
 
