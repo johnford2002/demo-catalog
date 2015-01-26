@@ -3,7 +3,7 @@
  * @author John Ford <john.ford2002@gmail.com
  * @since 2015-01-25
  */
-var Catalog = require('./Catalog/Catalog.js');
+var Catalog = require('./lib/Catalog/Catalog');
 
 var c = new Catalog();
 
